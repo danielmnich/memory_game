@@ -6,7 +6,33 @@
     width: 550px;
     height: 444px;
     border: 2px solid #ddd;
+    background-color: #ff6347;
 }
+/* .game-board::after, .game-board::before{
+    transition: 0.5s all;
+    display: block;
+    text-transform: uppercase;
+    height: 0px;
+    width: 275px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+} */
+/* .game-board::after{
+    content: "Memory";
+    top: -50px;
+    left: 0;
+}
+.game-board::before{
+    content: "Game";
+    bottom: 0px;
+    right: 0;
+} */
+
 
 .game-tile {
     position: absolute;
@@ -14,12 +40,52 @@
     width: 100px;
     height: 100px;
     background: #f6da17 url(images/title.png) center center no-repeat;
+    pointer-events: auto;
+    transition: 0.2s all;
 }
 
 .game-tile:hover {
     background-color:#F7C11A;
+    padding: 5px;
+    margin: -5px;
+
 }
 
 .game-score {
     text-align:center;
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 480px;
+    transform: translate(-50%, 0);
 }
+
+.game-start{
+    border: none;
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    background-color: #ff6347;
+    padding: 20px 40px;
+    border-radius: 15px;
+    transition: 0.3s all;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.game-start:hover{
+    cursor: pointer;
+    background-color: #ee5236;
+    color: #eeeeee;
+}
+/* .game-board:hover::after{
+    top: 0;
+    padding: 190px 0 254px 0;
+}
+.game-board:hover::before{
+    padding: 190px 0 254px 0;
+ }  */
